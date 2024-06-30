@@ -1,0 +1,11 @@
+package models;
+
+import java.time.LocalDate;
+
+public class Cliente {
+	private int id;
+	private String nombre;
+	private String contrasenia;
+	private int edad;
+	private double saldo;
+}
