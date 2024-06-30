@@ -1,0 +1,12 @@
+/build/
+
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+tmp/
+.idea/
+*.iml
+*.iws
+/Servers
