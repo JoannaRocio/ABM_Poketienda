@@ -1,0 +1,63 @@
+El proyecto se comienza desde AuthController.
+
+PANTALLA DE LOGUIN
+RUTA: views/auth/login.jsp
+1- Hay que modificar views/auth/login.jsp
+Agregarle INPUT Usuario/Nombre y INPUT Contraseña
+2 - Agregar botón "Ingresar como Empleado"
+3 - Validar que la contraseña y el usuario existan, si no existe devolver un mensaje de error.
+4 - Cuando te loguees como cliente te redirija a la vista de la tienda views/clientes/tienda/index.jsp
+5 - Cuando te loguees como empleado (admin) te redirija a la vista del panel empleado
+views/admin/panel-empleado/panel.jsp
+
+PANTALLA DE TIENDA
+RUTA: views/tienda/index.jsp
+1 - Agregar el saludo "Hola nombre de usuario"
+2 - Listado de articulos (nombre, precio, foto)
+3 - Crear un header con los botones "INICIO" , "CARRITO DE COMPRAS", "CERRAR SESIÓN"
+INICIO: Te lleva a views/clientes/tienda/index.jsp (la tienda principal).
+CARRITO DE COMPRAS: Te lleva a la vista del carrito views/clientes/carrito-compras/carrito.jsp.
+SALDO: Te lleva a la vista del saldo del usuario (permite cargar dinero) views/clientes/panel-saldo/saldo.jsp.
+CERRAR SESIÓN: Te devuelve a la pantalla de login y cierra la sesión.
+
+PANTALLA DE CARRITO DE COMPRAS
+RUTA: views/clientes/carrito-compras/carrito.jsp.
+1 - Listado de los articulos que seleccionó el cliente.
+2 - Total del presupuesto.
+3 - Generar una factura al finalizar la compra y se modifica el stock.
+
+PANTALLA HISTORIAL DE COMPRAS (CLIENTES)
+RUTA: views/clientes/historial-compra/compras.jsp
+1 - Mostrar el listado de las compras que realizó este cliente.
+2 - Opción para ver el detalle de cada compra que realizó el cliente.
+
+PANTALLA HISTORIAL DE VENTAS (EMPLEADOS)
+RUTA: views/admin/historial-venta/ventas.jsp
+1 - Mostrar el listado de todas las ventas que se realizó.
+2 - Opción para ver el detalle de cada venta.
+
+PANTALLA DE ADMIN (EMPLEADO)
+RUTA: views/admin/panel-empleado/panel.jsp
+1 - El panel tiene que tener las siguientes opciones (botones)
+ a. Ingresar artículo (ALTA)
+ b. Eliminar artículo (BAJA)
+ c. Editar artículo (EDICIÓN)
+ d. Listado de artículos (para ver todos los artículos y el stock/cantidad).
+ (se puede crear una sola pantalla para ver , crear , eliminar y editar los artículos).
+
+PANTALLA SALDO
+1 - Muestra el saldo del usuario.
+2 - Permite editar el saldo (agregar o quitar dinero)
+3 - Se tiene que actualizar al realizar una compra.
+4 - Transferir dinero (CONSULTAR AL PROFESOR)
+
+
+ARTICULOS (OBJETO)
+Los artículos deberán contener, cuanto mínimo, los siguientes datos: Código de Articulo, Stock(cantidad), Nombre/descripción y precio. 
+Se deberá poder ver y editar la cantidad de cada uno de los artículos cargados en el sistema.
+
+EMPLEADOS (OBJETO)
+
+CLIENTE (OBJETO)
+
+FACTURA (OBJETO)
