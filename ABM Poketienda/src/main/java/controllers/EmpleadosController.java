@@ -33,7 +33,6 @@ public class EmpleadosController extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("entro al empleado controller ");
 		SessionDecorator sDec = new SessionDecorator(request.getSession());
 		try {
 			sDec.getEmpleadoLogueado();

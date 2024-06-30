@@ -52,3 +52,30 @@
 .button-login:hover {
     background-color: rgb(56, 115, 237);
 }
+
+
+.body-tienda {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/fondo-pikachu-verde.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina cualquier margen del body */
+}
+
+.articulos-tienda {
+	display: flex;
+}
+
+
+.botonera-tienda {
+	display: flex;
+	background: lightskyblue;
+    padding: 15px;
+}
+
+.button-tienda {
+	margin: 5px;
+    border-radius: 5px;
+}

@@ -18,7 +18,7 @@ import repositories.EmpleadosRepoSingleton;
 import repositories.interfaces.ClienteRepo;
 import repositories.interfaces.EmpleadoRepo;
 
-@WebServlet("/auth")  
+@WebServlet("/auth")   
 public class AuthController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	 
@@ -41,6 +41,7 @@ public class AuthController extends HttpServlet {
 		
 		if (accion == null) {
 			request.getRequestDispatcher("/views/auth/login.jsp").forward(request, response);
+			return;
 		}
 		
 		
@@ -153,7 +154,7 @@ public class AuthController extends HttpServlet {
 			
 			sessionDe.setClienteLogueado(_username);
 			
-			response.sendRedirect("empleados");
+			response.sendRedirect("tienda");
 		}
 		
 		else {
